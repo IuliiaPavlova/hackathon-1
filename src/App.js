@@ -3,6 +3,7 @@
 import React from 'react';
 import Planet from './components/Planet';
 import Person from './components/Person';
+import Planets from './components/Planets';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         Star Wars App
       </header>
+      <Planets />
       <Planet />
       <Person />
     </div>

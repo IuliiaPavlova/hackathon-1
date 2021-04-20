@@ -16,6 +16,6 @@ type Planet {
 
 type Query {
   planet(id: ID!): Planet @rest(endpoint: "https://swapi.dev/api/planets/$id;")
-  planets: [Planet]
+  getPlanets: [Planet]
     @rest(resultroot: "results[]", endpoint: "https://swapi.dev/api/planets/")
 }
