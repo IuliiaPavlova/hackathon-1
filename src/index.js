@@ -1,12 +1,11 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { ApolloProvider } from '@apollo/react-hooks';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloProvider } from '@apollo/react-hooks';
-import { client } from './utils/client'
-
-
+import { client } from './utils/client';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +13,7 @@ ReactDOM.render(
       <App />
     </ApolloProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

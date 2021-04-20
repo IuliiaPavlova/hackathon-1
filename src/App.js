@@ -1,7 +1,6 @@
-import HelloWorld from './HelloWorld';
-
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/jsx-filename-extension */
+// import './App.css';
+import React from 'react';
 import Planet from './components/Planet';
 import Person from './components/Person';
 
