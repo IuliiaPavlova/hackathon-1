@@ -1,0 +1,21 @@
+type Planet {
+  name: String!
+  rotation_period: String
+  orbital_period: String
+  diameter: String
+  climate: String
+  gravity: String
+  terrain: String
+  surface_water: String
+  population: String
+  residents: [Person]
+  created: String
+  edited: String
+  url: String
+}
+
+type Query {
+  planet(id: ID!): Planet @rest(endpoint: "https://swapi.dev/api/planets/$id;")
+  planets: [Planet]
+    @rest(resultroot: "results[]", endpoint: "https://swapi.dev/api/planets/")
+}

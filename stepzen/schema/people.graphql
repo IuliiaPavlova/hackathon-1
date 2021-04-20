@@ -1,0 +1,14 @@
+type Person {
+  name: String!
+  birth_year: String
+  gender: String
+  height: String
+  eye_color: String
+  hair_color: String
+}
+
+type Query {
+  person(id: ID!): Person @rest(endpoint: "https://swapi.dev/api/people/$id/")
+  people: [Person]
+    @rest(resultroot: "results[]", endpoint: "https://swapi.dev/api/people/")
+}
